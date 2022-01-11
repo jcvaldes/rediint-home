@@ -1,0 +1,12 @@
+import { HeroComponent } from './../../shared/components/hero/hero.component';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { HomeRoutingModule } from './home-routing.module';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+
+@NgModule({
+  declarations: [HomePageComponent, HeroComponent],
+  imports: [CommonModule, HomeRoutingModule],
+})
+export class HomeModule {}
